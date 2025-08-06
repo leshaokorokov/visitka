@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+:root{
+    --bg-color: #703D57;
+    --text-color: #D9B8C4;
+    --accent-color: #241715;
+    --add-color: #957186;
+    --shadow-color: #402A2C;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Libertinus Sans", sans-serif;
+    font-weight: 700;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+a{
+    all: unset;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+a:hover{
+    color: var(--shadow-color);
+}
+h1{
+    font-size: 60px;
+}
+h3{
+    font-size: 50px;
+    color: var(--add-color);
+}
+h4{
+    font-size: 40px;
+    color: var(--add-color);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--accent-color);
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: var(--bg-color);
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo span{
+    color: var(--add-color) ;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+#burger{
+    display: none;
+}
+.offer{
+    display: flex;
+    align-items: flex-start;
+
+}
+.offer img{
+    max-width: 50%;
+}
+.offer-text{
+    max-width: 50%;
+}
+.offer-text h1{
+    margin: 50px 0;
+}
+.offer-text li{
+    line-height: 200%;
+    color: var(--add-color);
+    font-size: 40px;
+}
+.offer ul{
+    list-style: disc;
+    margin-left: 30px;
+}
+.offer li::marker{
+    color: var(--accent-color);
+
+}
+.description{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;   
+}
+#description, #about, #services{
+    scroll-margin-block-start: 80px;
+}
+.description h3{
+    text-align: center;
+}
+.description span{
+    color: var(--accent-color);
+}
+.description h4{
+    text-align: center;
+}
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: fixed;
+    transition: 1s;
+    background-color: var(--bg-color);
+    right: 0;
+    padding: 10px;
+    top: -400px;
+}
+.burger-menu-open{
+   display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: fixed;
+    transition: 1s;
+    background-color: var(--bg-color);
+    right: 0;
+    padding: 10px;
+    top: 100px; 
+    
+}
+.about{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+.about h3{
+    text-align: center;
+}
+.info{
+    border-radius: 50%;
+    max-width: 200px;   
+}
+.advantages h3{
+    text-align: center;
+    margin: 50px 0;
+
+}
+.infograf div{
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+.infograf{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;  
+}
+.infograf span{
+    font-size: 40px;
+    font-weight: 700;
+}
+.services{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+.services h3, .services h4{
+    text-align: center;
+}
+.services li{
+    line-height: 200%;
+    color: var(--add-color);
+    font-size: 40px;
+}
+.services ul{
+    list-style: disc;
+}
+.services li::marker{
+    color: var(--accent-color);
+
+}
+.oferta{
+    color: var(--add-color);
+    font-size: 30px;
+}
+footer{
+    margin-top: 50px;
+    border-top: 3px solid var(--accent-color);
+}
+.stages{
+    font-size: 35px;
+    color: var(--shadow-color);
+    text-align: center;
+}
+.bonus{
+    color: var(--add-color);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    #burger {
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .offer{
+        flex-direction: column;
+    }
+    .offer-text{
+        max-width: 100%;
+    }
+    .offer img{
+        max-width: 100%;
+    }
+    
+}
+
