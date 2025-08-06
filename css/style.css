@@ -232,6 +232,7 @@ footer{
     }
     .offer{
         flex-direction: column;
+        gap: 50px;
     }
     .offer-text{
         max-width: 100%;
@@ -241,4 +242,32 @@ footer{
     }
     
 }
+@media screen and (max-width: 1124px){
+    h1, h2, h3, h4{
+        font-size: 30px;
+    }
+    .offer li{
+        font-size: 30px;
+        line-height: 100%;
+        
+    }
+    .advantages span{
+        font-size: 30px;
+    }
+    .services li{
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+}
+@media screen and (max-width: 665px){
+    .logo{
+        display: none;
+    }
+    .info{
+        display: none;
+    }
+
+}
+
 
