@@ -126,8 +126,8 @@ nav{
     position: fixed;
     transition: 1s;
     background-color: var(--bg-color);
-    right: 0;
-    padding: 10px;
+    right: 100px;
+    padding: 20px;
     top: -400px;
 }
 .burger-menu-open{
@@ -137,8 +137,8 @@ nav{
     position: fixed;
     transition: 1s;
     background-color: var(--bg-color);
-    right: 0;
-    padding: 10px;
+    right: 100px;
+    padding: 20px;
     top: 100px; 
     
 }
