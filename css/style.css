@@ -142,7 +142,7 @@ main{
     background-color: var(--bg-color);
     right: 0;
     padding: 30px;
-    top: 70px; 
+    top: 75px; 
     
 }
 .about{
@@ -276,5 +276,6 @@ footer{
     }
 
 }
+
 
 
