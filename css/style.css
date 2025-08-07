@@ -129,8 +129,8 @@ main{
     position: fixed;
     transition: 1s;
     background-color: var(--bg-color);
-    right: 100px;
-    padding: 20px;
+    right: 0;
+    padding: 30px;
     top: -400px;
 }
 .burger-menu-open{
@@ -140,9 +140,9 @@ main{
     position: fixed;
     transition: 1s;
     background-color: var(--bg-color);
-    right: 100px;
-    padding: 20px;
-    top: 100px; 
+    right: 0;
+    padding: 30px;
+    top: 70px; 
     
 }
 .about{
@@ -276,6 +276,5 @@ footer{
     }
 
 }
-
 
 
