@@ -274,8 +274,30 @@ footer{
     .info{
         display: none;
     }
-
+    h1, h3, h4{
+        font-size: 25px;
+    }
+    .offer li{
+        font-size: 20px;
+        line-height: 100%;
+        
+    }
+    .advantages span{
+        font-size: 20px;
+    }
+    .services li{
+        font-size: 20px;
+        line-height: 100%;
+    }
+    body{
+        font-size: 20px;
+    }
+    .stages{
+        font-size: 20px;
+    }
+    .oferta{
+        font-size: 20px;
+    }
 }
-
 
 
