@@ -119,6 +119,9 @@ nav{
 .description h4{
     text-align: center;
 }
+main{
+    overflow: hidden;
+}
 .burger-menu{
     display: flex;
     flex-direction: column;
@@ -273,5 +276,6 @@ footer{
     }
 
 }
+
 
 
