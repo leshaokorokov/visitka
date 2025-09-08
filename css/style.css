@@ -168,6 +168,7 @@ main{
     overflow: hidden;
     position: relative;
     width: 100%;
+    z-index: 1;
 }
 
 .frame {
@@ -402,4 +403,5 @@ footer{
     height: auto;
     object-fit: cover;
     width: 100%;
+
 }
