@@ -21,7 +21,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     font-size: 30px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -72,10 +72,12 @@ nav{
 .offer{
     display: flex;
     align-items: flex-start;
+    gap: 50px;
 
 }
 .offer img{
     max-width: 50%;
+    border-radius: 10px;
 }
 .offer-text{
     max-width: 50%;
@@ -107,7 +109,7 @@ nav{
     gap: 50px;
     margin-top: 50px;   
 }
-#description, #about, #services{
+#portfolio, #about, #services{
     scroll-margin-block-start: 80px;
 }
 .description h3{
@@ -156,6 +158,64 @@ main{
 .about h3{
     text-align: center;
 }
+#portfolio h3{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.frame {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--add-color);
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    font-size: 24px;
+
+}
+
+.prev-button {
+    left: 0px;
+}
+
+.next-button {
+    right: 0px;
+}
+.next-button:hover, .prev-button:hover{
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+.slider-wrapper {
+    display: flex;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
 .info{
     border-radius: 50%;
     max-width: 200px;   
@@ -301,3 +361,45 @@ footer{
 }
 
 
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .frame {
+        padding: 15px; /* Уменьшаем отступы */
+        gap: 8px; /* Уменьшаем промежуток между элементами */
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 18px; /* Уменьшаем размер кнопок */
+        padding: 8px; /* Уменьшаем padding */
+    }
+
+    .slider {
+        padding: 10px; /* Добавляем отступы для слайдера */
+    }
+}
+
+@media (max-width: 480px) {
+    .frame {
+        padding: 10px; /* Еще меньше отступы */
+        gap: 5px; /* Еще меньше промежуток */
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 16px; /* Еще меньше размер кнопок */
+        padding: 6px; /* Еще меньше padding */
+    }
+
+    .slider {
+        padding: 5px; /* Меньше отступы для слайдера */
+    }
+}
+
+/* Адаптация изображений */
+.frame img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
