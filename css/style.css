@@ -27,7 +27,9 @@ body{
 }
 a{
     all: unset;
+    color: var(--text-color);
     cursor: pointer;
+    text-decoration: none;
 }
 a:hover{
     color: var(--shadow-color);
@@ -80,6 +82,7 @@ nav{
     font-size: 40px;
     padding: 5px;
     text-align: center;
+    color: var(--text-color);
 }
 #burger:hover{
     background: var(--add-color);
@@ -181,6 +184,12 @@ main{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+}
+#portfolio a{
+    color: var(--accent-color);
+}
+#portfolio a:hover{
+    color: var(--shadow-color);
 }
 .slider {
     display: flex;
