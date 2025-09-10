@@ -192,12 +192,17 @@ main{
 #portfolio a:hover{
     color: var(--shadow-color);
 }
+#portfolio p{
+    max-width: 90%;
+}
 .slider {
     display: flex;
     overflow: hidden;
     position: relative;
     width: 100%;
     z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
     
 }
 
@@ -227,6 +232,8 @@ main{
     z-index: 1;
     padding: 10px;
     font-size: 24px;
+    width: 50px;
+    height: 50px;
 
 }
 
@@ -408,6 +415,13 @@ footer{
     .slider {
         padding: 10px; /* Добавляем отступы для слайдера */
     }
+    .prev-button,
+.next-button {
+    width: 30px;
+    height: 30px;
+    
+
+}
 }
 
 @media (max-width: 480px) {
