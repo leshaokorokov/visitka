@@ -27,7 +27,6 @@ body{
 }
 a{
     all: unset;
-    color: var(--accent-color);
     cursor: pointer;
 }
 a:hover{
@@ -66,9 +65,27 @@ nav{
     display: flex;
     gap: 50px;
 }
+.social{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    
+}
 #burger{
     display: none;
+    all: unset;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
 }
+#burger:hover{
+    background: var(--add-color);
+    border-radius: 8px;
+}
+
 .offer{
     display: flex;
     align-items: flex-start;
