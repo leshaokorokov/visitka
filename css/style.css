@@ -73,8 +73,8 @@ nav{
     align-items: center;
     
 }
+
 #burger{
-    display: none;
     all: unset;
     width: 64px;
     height: 64px;
@@ -83,6 +83,7 @@ nav{
     padding: 5px;
     text-align: center;
     color: var(--text-color);
+    display: none;
 }
 #burger:hover{
     background: var(--add-color);
