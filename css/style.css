@@ -319,7 +319,9 @@ footer{
 .bonus{
     color: var(--add-color);
 }
-
+.vk-offer{
+    margin: 10px 0;
+}
 
 
 
