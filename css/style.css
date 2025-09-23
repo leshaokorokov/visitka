@@ -93,18 +93,28 @@ nav{
 .offer{
     display: flex;
     align-items: flex-start;
-    gap: 50px;
+    gap: 10%;
 
+}
+.offer h3{
+    text-decoration: underline;
 }
 .offer img{
     max-width: 50%;
     border-radius: 10px;
 }
 .offer-text{
-    max-width: 50%;
+    max-width: 40%;
 }
 .offer-text h1{
     margin: 50px 0;
+}
+
+.old-price{
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: var(--shadow-color);
+    font-size: 40px;
 }
 .offer-text li{
     line-height: 150%;
@@ -352,6 +362,9 @@ footer{
 @media screen and (max-width: 1124px){
     h1, h3, h4{
         font-size: 30px;
+    }
+    .old-price{
+        font-size: 20px;
     }
     .offer li{
         font-size: 30px;
